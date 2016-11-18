@@ -9,6 +9,13 @@ public class Composition implements Comparable<Composition> {
     private int length;
     private String genre;
 
+    Composition(String artist, String name, int length, String genre) {
+        this.artist = artist;
+        this.name = name;
+        this.length = length;
+        this.genre = genre;
+    }
+
     public String getArtist() {
         return artist;
     }
@@ -17,7 +24,7 @@ public class Composition implements Comparable<Composition> {
         this.artist = artist;
     }
 
-    public String getName() {
+    String getName() {
         return name;
     }
 
@@ -25,7 +32,7 @@ public class Composition implements Comparable<Composition> {
         this.name = name;
     }
 
-    public int getLength() {
+    int getLength() {
         return length;
     }
 
